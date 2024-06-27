@@ -9,8 +9,8 @@ const App = () => {
   return (
       <div className="container">
         <Routes>
-          <Route path="/" component={CharacterList} />
-          <Route path="/characters/:characterId" component={CharacterDetail} />
+          <Route path="/" element={<CharacterList/>} />
+          <Route path="/characters/:characterId" element={<CharacterDetail/>} />
         </Routes>
       </div>
   );
